@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/quche.css">
+</head>
+<body>
+<div class="quche">
+      <div class="gongneng">
+
+
+      </div>
+
+</div>
+</body>
+<script src="../js/zepto.min.js"></script>
+<script>
+    function setrem() {
+        var windowwidth = window.innerWidth;
+        var newpx = (windowwidth / 750) * 100;
+        $('html').css('fontSize', newpx);
+    }
+    setrem();
+    window.onresize = function () {
+        setrem();
+    };
+</script>
+</html>

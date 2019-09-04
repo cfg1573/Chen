@@ -1,0 +1,187 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+html{
+    font-size: 100px;
+}
+html,body {
+    width: 100%;
+    height: 100%;
+
+}
+.chongzhi{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+  overflow: hidden;
+}
+.chongzhi .header{
+    display: flex;
+    margin-top: 0.35rem;
+    padding: 0.3rem;
+}
+.chongzhi .header a{
+    display: flex;
+}
+.chongzhi .header img{
+    width: 0.44rem;
+    height: 0.44rem;
+    margin-left: -0.05rem;
+
+}
+
+.chongzhi .header p{
+    color: white;
+    font-size: 0.36rem;
+    margin-left: 39%;
+}
+.chongzhi .pont{
+
+}
+.chongzhi .pont h5{
+    font-size: 0.32rem;
+    color: white;
+    padding-left: 0.3rem;
+}
+.chongzhi .pont ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.31rem 0.3rem;
+}
+.chongzhi .pont ul:nth-of-type(2){
+   margin-top: -0.38rem;
+}
+.chongzhi .pont ul li{
+    width: 2.12rem;
+    height: 1.30rem;
+    text-align:center;
+    border-radius: 0.2rem;
+    border:rgb(254,195,35) 1px solid;
+}
+.chongzhi .pont ul li:hover{
+    background-color:rgb(254,195,35) ;
+}
+/*.chongzhi .pont ul .lis{*/
+    /*background-color: black;*/
+/*}*/
+.chongzhi .pont ul .lis:hover{
+    background-color: black;
+}
+.chongzhi .pont ul li input{
+ background-color: black;
+    border: none;
+    outline: none;
+    color: white;
+   display: block;
+    width: 2.12rem;
+    margin-top: 0.14rem;
+    text-align: center;
+    font-size: 0.28rem;
+}
+.chongzhi .pont ul li h6{
+    font-size: 0.42rem;
+    color: white;
+ font-weight: 500;
+    margin-top: 0.13rem;
+}
+.chongzhi .pont ul li .h6t{
+    font-size: 0.28rem;
+    margin-top: 0.2rem;
+}
+.chongzhi .pont ul li p{
+    font-size: 0.28rem;
+    color: white;
+
+}
+.chongzhi .pst{
+    font-size: 0.26rem;
+    color: white;
+    padding-left: 0.3rem;
+}
+.chongzhi .postr{
+    padding-top: 0.82rem;
+
+}
+.chongzhi .postr h5{
+    font-size: 0.32rem;
+    color: white;
+    margin-left: 0.3rem;
+}
+.chongzhi .postr .yinlian{
+display: flex;
+    margin-top: 0.28rem;
+}
+.chongzhi .postr .yinlian .df{
+
+}
+.chongzhi .postr .yinlian .df img{
+    width: 0.44rem;
+    height: 0.44rem;
+   position: absolute;
+    right: 0.3rem;
+
+}
+.chongzhi .postr .yinlian .imgst{
+    display: flex;
+    margin-left: 0.3rem;
+}
+.chongzhi .postr .yinlian .imgst img{
+    width: 0.44rem;
+    height: 0.44rem;
+}
+.chongzhi .postr .yinlian .imgst p{
+    font-size: 0.3rem;
+    color: white;
+    margin-left: 0.25rem;
+}
+.chongzhi .postr .tongyi{
+    display: flex;
+    align-items: center;
+    margin-left: 0.3rem;
+    margin-top: 0.61rem;
+}
+.chongzhi .postr .tongyi img{
+    width: 0.44rem;
+  height: 0.44rem;
+}
+.chongzhi .postr .tongyi p{
+    font-size: 0.26rem;
+    color: white;
+}
+.chongzhi .postr .tongyi p span{
+    color: rgb(254,195,35);
+}
+.chongzhi a{
+    text-decoration: none;
+}
+.chongzhi a button{
+     width: 6rem;
+     height: 0.8rem;
+     border-radius: 0.4rem;
+     background-color: rgb(254,195,35);
+     border: none;
+     outline: none;
+     font-size: 0.32rem;
+     color: white;
+     display: block;
+     margin:2.1rem auto;
+
+ }
+.chongzhi .postr .yinlian .df .bnm{
+    display: block;
+}
+.chongzhi .postr .yinlian .df .bnm1{
+    display: none;
+}
+.chongzhi .postr .yinlian .df .bnm2{
+    display: none;
+}
+.chongzhi .bnm3{
+    display: none;
+    margin-left: 0.3rem;
+    width: 0.44rem;
+    height: 0.44rem;
+    margin-top: -0.438rem;
+}

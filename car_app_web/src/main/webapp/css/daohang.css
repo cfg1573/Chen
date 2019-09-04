@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100%;
+
+}
+.daohang{
+    width: 100%;
+}
+.daohang .fenx{
+    width: 100%;
+    height: 2rem;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    background-color: black;
+
+}
+.daohang .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.35rem;
+    padding: 0.3rem;
+    /*position: fixed;*/
+    /*top: 1rem;*/
+
+}
+.daohang .header img:nth-of-type(1){
+    width: 0.44rem;
+    height: 0.45rem;
+}
+.daohang .header img:nth-of-type(2){
+    width: 0.45rem;
+    height: 0.39rem;
+}
+.daohang .header a{
+    display: flex;
+    align-items: center;
+}
+.daohang .header p{
+    color: white;
+    font-size: 0.36rem;
+}
+.daohang  .nav ul{
+    display: flex;
+    justify-content: space-around;
+    padding:0 0.30rem;
+    align-items: center;
+    margin-top: -0.05rem;
+list-style: none;
+}
+.daohang  .nav ul li{
+    color: white;
+    font-size: 0.28rem;
+    width: 1.48rem;
+    height: 0.51rem;
+    line-height: 0.51rem;
+    text-align: center;
+
+}
+.daohang  .nav ul li a{
+    color: white;
+    font-size: 0.28rem;
+    text-decoration: none;
+}
+.daohang  .nav ul li:nth-of-type(2){
+    background-color: rgb(209,51,57);
+    width: 1.48rem;
+    height: 0.51rem;
+    line-height: 0.51rem;
+    border-radius: 0.26rem;
+    /*margin-top: -0.05rem;*/
+
+
+}
+.daohang>.sech {
+    width: 100%;
+    height: 4.39rem;
+    background: rgb(255, 195, 34);
+    border-radius: 0.4rem 0.4rem 0 0;
+    position: absolute;
+    bottom: 0;
+    /* position: relative; */
+    font-size: 0
+}
+.daohang>.sech>.sech_top{
+    position: relative;
+}
+.daohang>.sech>.sech_top>img {
+    width: 0.35rem;
+    height: 0.33rem;
+    position: absolute;
+    margin-top: 0.8rem;
+    margin-left: 0.69rem;
+}
+
+.daohang>.sech>.sech_top>input {
+    width: 90%;
+    height: 0.82rem;
+    border: none;
+    outline: none;
+    border-radius: 0.1rem;
+    margin-top: 0.53rem;
+    margin-left: 0.36rem;
+    font-size: .26rem;
+    color:rgb(102, 102, 102);
+    text-indent: 0.99rem;
+}
+.daohang>.sech>.pic{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0.31rem;
+}
+.daohang>.sech>.pic>li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* display: block; */
+}
+.daohang>.sech>.pic>li>img{
+    width: 1rem;
+    height: 1rem;
+}
+.daohang>.sech>.pic>li>p{
+    font-size: .26rem;
+    color:rgb(18, 2, 32);
+    /* width: 1.3rem; */
+    text-align: center;
+    margin-top: 0.3rem;
+}
+.daohang>.sech>.footer{
+    display: flex;
+}
+.daohang>.sech>.footer>p>img{
+    width: 0.4rem;
+    height: 0.4rem;
+    margin-right: 0.2rem;
+    vertical-align: -0.1rem;
+}
+.daohang>.sech>.footer>p{
+    font-size: .26rem;
+    color:rgb(18, 2, 32);
+    margin-top: 0.4rem;
+}
+.daohang>.sech>.footer>p:nth-child(1){
+   margin-left: 0.86rem;
+}
+.daohang>.sech>.footer>p:nth-child(2){
+    margin-left:1.69rem;
+ }
+
+ /* 地图 */
+ #container{
+     width: 100%;
+     height: 7.45rem;
+     position: absolute;
+     bottom:4rem;
+ }
+ .amap-copyright{
+     display: none !important;
+ }

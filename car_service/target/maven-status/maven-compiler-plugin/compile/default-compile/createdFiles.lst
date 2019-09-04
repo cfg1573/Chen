@@ -1,0 +1,12 @@
+cn\kgc\service\CarService.class
+cn\kgc\service\UserAdminService.class
+cn\kgc\service\UserService.class
+cn\kgc\service\impl\ShopServiceImpl.class
+cn\kgc\service\impl\UserAdminServiceImpl.class
+cn\kgc\service\impl\CarServiceImpl.class
+cn\kgc\service\ShopService.class
+cn\kgc\service\OrderService.class
+cn\kgc\service\impl\OrderServiceImpl.class
+cn\kgc\service\Order_Car_Service.class
+cn\kgc\service\impl\Order_Car_ServiceImpl.class
+cn\kgc\service\impl\UserServiceImpl.class

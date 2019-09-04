@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="admin_web" />
+        <module name="car_admin_web" />
+        <module name="car_app_web" />
+        <module name="car_controller" />
+        <module name="car_dao" />
+        <module name="car_pojo" />
+        <module name="car_service" />
+        <module name="car_utils" />
+        <module name="car_web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="admin_web" target="1.7" />
+      <module name="car_admin_web" target="1.7" />
+      <module name="car_app_web" target="1.7" />
+      <module name="car_controller" target="1.7" />
+      <module name="car_dao" target="1.7" />
+      <module name="car_pojo" target="1.7" />
+      <module name="Car_rental" target="1.7" />
+      <module name="car_service" target="1.7" />
+      <module name="car_utils" target="1.7" />
+      <module name="car_web" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

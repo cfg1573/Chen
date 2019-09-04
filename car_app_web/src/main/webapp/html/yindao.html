@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/swiper-4.1.6.min.css">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        html{
+            font-size: 100px;
+        }
+        html,body {
+            width: 100%;
+            height: 100%;
+        }
+        .yindao{
+            width: 100%;
+            height: 13.34rem;
+        }
+        .yindao .imgs img{
+            width: 100%;
+            height: 13.34rem;
+        }
+        .yindao  .swiper-container{
+            z-index: 1
+        }
+        .yindao  .swiper-container .swiper-wrapper{
+            width: 100%;
+            height: 100%;
+
+        }
+        .yindao  .swiper-container .swiper-wrapper .swiper-slide:nth-of-type(1) {
+            width: 100%;
+            height:13.34rem;
+            background:url("../imgs/yindao/引导页1.gif")no-repeat ;
+            background-size: 100% 13.34rem;
+        }
+        .yindao .swiper-container .swiper-wrapper .swiper-slide:nth-of-type(2) {
+            width: 100%;
+            height: 13.34rem;
+            background:url("../imgs/yindao/引导页-2.gif")no-repeat ;
+            background-size: 100% 13.34rem;
+
+        }
+        .yindao .swiper-container .swiper-wrapper .swiper-slide:nth-of-type(3) {
+            width: 100%;
+            height: 13.34rem;
+            background:url("../imgs/yindao/3.gif")no-repeat ;
+            background-size: 100% 13.34rem;
+
+        }
+        .yindao .swiper-container .swiper-wrapper .btn{
+            width: 3.4rem;
+            height: 0.88rem;
+            border-radius: 0.44rem;
+            background-color: rgb(255,0,0);
+            border: none;
+            font-size: 0.48rem;
+            color: white;
+            outline: none;
+            margin:11.8rem auto;
+            display: block;
+
+        }
+        .yindao .swiper-container .swiper-wrapper .btn a{
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<div class="yindao">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+
+            </div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide">
+
+                <button class="btn"><a href="../html/index.html">立即开启</a></button>
+            </div>
+        </div>
+        <!--<div class="swiper-pagination"></div>-->
+    </div>
+
+</div>
+</body>
+<script src="../js/zepto.min.js"></script>
+<script src="../js/swiper.js"></script>
+<script>
+    var mySwiper = new Swiper('.swiper-container', {
+        autoplay: {
+            disableOnInteraction: false,
+        },
+        loop:false,
+        pagination: {
+            el: '.swiper-pagination',
+            paginationType:"bullets",
+        },
+    });
+
+    function setrem() {
+        var windowwidth = window.innerWidth;
+        var newpx = (windowwidth / 750) * 100;
+        $('html').css('fontSize', newpx);
+    }
+    setrem();
+    window.onresize = function () {
+        setrem();
+    };
+</script>
+</html>

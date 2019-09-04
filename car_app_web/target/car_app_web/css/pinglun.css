@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+html{
+    font-size: 100px;
+}
+html,body {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+.pinglun{
+    width: 100%;
+    height: 100%;
+
+}
+.pinglun .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.35rem;
+    padding: 0.3rem;
+}
+.pinglun .header a{
+    display: flex;
+}
+.pinglun .header img:nth-of-type(1){
+    width: 0.44rem;
+    height: 0.44rem;
+}
+.pinglun .header img:nth-of-type(2){
+    width: 0.44rem;
+    height: 0.44rem;
+}
+.pinglun .header p{
+    color: white;
+    font-size: 0.36rem;
+}
+.pinglun .text{
+    font-size: 0.3rem;
+    color: white;
+    margin-left: 0.3rem;
+    margin-top: 0.3rem;
+}
+.pinglun .zhuneirong{
+    overflow: hidden;
+}
+.pinglun .zhuneirong .tp{
+    display: flex;
+    margin-left: 0.31rem;
+    margin-top: 0.3rem;
+}
+.pinglun .zhuneirong .tp img{
+    width: 0.8rem;
+    height: 0.8rem;
+}
+.pinglun .zhuneirong .tp .tot{
+    margin-left: 0.25rem;
+}
+.pinglun .zhuneirong .tp .tot h5{
+    color: white;
+    font-size: 0.32rem;
+}
+.pinglun .zhuneirong .tp .tot p{
+    color: rgb(192,192,192);
+    font-size: 0.26rem;
+}
+.pinglun .zhuneirong .tp span{
+margin-left: 0.37rem;
+}
+.pinglun .zhuneirong .tp .tot{
+
+}
+.pinglun .zhuneirong .textg{
+    font-size: 0.28rem;
+    color: white;
+    margin-left: 1.37rem;
+    margin-top: 0.21rem;
+}
+.pinglun .zhuneirong .tupian .imgs{
+margin-left: 1.37rem;
+    margin-top: 0.27rem;
+}
+.pinglun .zhuneirong .tupian .imgs img{
+    width: 2.8rem;
+    height: 2.8rem;
+}
+.pinglun .zhuneirong .tupian .imgs img:nth-of-type(2){
+    margin-left: -0.05rem;
+}
+.pinglun .zhuneirong .tupian .fuwupingjia{
+display: flex;
+    margin-left: 1.36rem;
+}
+.pinglun .zhuneirong .tupian .fuwupingjia p{
+color: white;
+    font-size: 0.3rem;
+}
+.pinglun .zhuneirong .tupian .fuwupingjia .bout{
+
+    display: flex;
+    margin-left: 0.1rem;
+}
+
+.pinglun .zhuneirong .tupian .fuwupingjia .bout img{
+    width: 0.44rem;
+    height: 0.44rem;
+    margin-left: -0.05rem;
+}
+.pinglun .zhuneirong .tupian .fuwupingjia .bout1{
+    display: flex;
+    align-items: center;
+    margin-left: 0.56rem;
+}
+.pinglun .zhuneirong .tupian .fuwupingjia .bout1 img{
+    width: 0.44rem;
+    height: 0.44rem;
+}
+.pinglun .zhuneirong .tupian .fuwupingjia .bout1 img:nth-of-type(2){
+    margin-left: 0.3rem;
+}
+.pinglun .zhuneirong .tupian .fuwupingjia .bout1 span{
+    font-size: 0.24rem;
+    color: white;
+}
+.pinglun .zhuneirong .tupian .imgs .imgt{
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-left: -0.05rem;
+}

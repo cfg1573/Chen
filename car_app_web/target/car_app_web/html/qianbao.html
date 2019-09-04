@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="../css/qianbao.css">
+
+<body>
+    <div class="head">
+        <a href="../html/index.html"><img src="../imgs/jiantou.png" alt=""></a>
+        <span>钱包</span>
+    </div>
+    <div class="pic">
+        <div class="pic_top">
+            <img src="../imgs/qianbao/img-01@2x.png" alt="">
+        </div>
+        <div class="pic_center">
+            <img src="../imgs/qianbao/icon-01@2x.png" alt="">
+            <img src="../imgs/qianbao/icon-02@2x.png" alt="">
+        </div>
+        <div class="pic_text">
+          <p><span>平驾币</span><span>积分</span></p>
+          <p><span>2200333</span>枚<span>3300</span>分</p>
+        </div>
+    </div>
+    <div class="text">
+        <p>①&nbsp;说明：1平驾币=1元</p>
+        <p>平驾币用于冲抵租车费用</p>
+        <p>平驾币不可体现</p>
+    </div>
+    <div class="text">
+        <p>②&nbsp;说明：1积分=1元</p>
+        <p>每单最高可使用积分冲抵40%的租车费用</p>
+    </div>
+    <div class="btn">
+        <a href="../html/chongzhi.html"><p>现在充值</p></a>
+    </div>
+</body>
+
+<script src="../js/zepto.min.js"></script>
+<script>
+
+    function setrem() {
+        var windowwidth = window.innerWidth;
+        var newpx = (windowwidth / 750) * 100;
+        $('html').css('fontSize', newpx);
+    }
+    setrem();
+    window.onresize = function () {
+        setrem();
+    };
+
+</script>
+
+</html>

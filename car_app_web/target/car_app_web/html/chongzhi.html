@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>充值</title>
+    <link rel="stylesheet" href="../css/chongzhi.css">
+</head>
+<body>
+<div class="chongzhi">
+    <div class="header">
+        <a href="../html/qianbao.html"><img src="../imgs/jiantou.png" alt=""></a>
+        <p>充值</p>
+    </div>
+    <div class="pont">
+      <h5>平驾币充值金额</h5>
+        <ul>
+            <li>
+                <h6>1000</h6>
+                <p>送100积分</p>
+            </li>
+            <li>
+                <h6>2000</h6>
+                <p>送300积分</p>
+            </li>
+            <li>
+                <h6>5000</h6>
+                <p>送1000积分</p>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <h6>8000</h6>
+                <p>送2000积分</p>
+            </li>
+            <li>
+                <h6>10000</h6>
+                <p>送3000积分</p>
+            </li>
+            <li class="lis">
+                <h6 class="h6t">输入平架币数</h6>
+                <input v-model="gt": type="text" placeholder="">
+            </li>
+        </ul>
+    </div>
+    <div class="pst">注：1积分=1元每单最高可使用积分冲抵40%的租车费用</div>
+<div class="postr">
+    <h5>支付方式</h5>
+    <div class="yinlian">
+        <div class="imgst">
+            <img src="../imgs/银联@2x.png" alt="">
+            <p>银联</p>
+        </div>
+            <div class="df">
+                <img name="w" class="lot" src="../imgs/选择@2x.png" alt="">
+                <img name="w" class="bnm" src="../imgs/选中@2x.png" alt="">
+            </div>
+    </div>
+    <div class="yinlian">
+        <div class="imgst">
+            <img src="../imgs/微信@2x.png" alt="">
+            <p>微信</p>
+        </div>
+        <div class="df">
+            <img name="w" class="lost" src="../imgs/选择@2x.png" alt="">
+            <img name="w" class="bnm1" src="../imgs/选中@2x.png" alt="">
+        </div>
+    </div>
+    <div class="yinlian">
+        <div class="imgst">
+            <img src="../imgs/支付宝@2x.png" alt="">
+            <p>支付宝</p>
+        </div>
+        <div class="df">
+            <img name="w" class="rop" src="../imgs/选择@2x.png" alt="">
+            <img name="w" class="bnm2" src="../imgs/选中@2x.png" alt="">
+        </div>
+    </div>
+      <div class="tongyi">
+          <img class="bt" src="../imgs/同意1@2x.png" alt="">
+          <p> 同意 <span>平驾分时租车租赁协议</span></p>
+      </div>
+</div>
+    <img class="bnm3" src="../imgs/同意2@2x.png" alt="">
+    <a href="../html/qianbao.html"><button>充值</button></a>
+</div>
+</body>
+<script src="../js/zepto.min.js"></script>
+<script src="../js/swiper.js"></script>
+<script src="../js/vue.js"></script>
+<script>
+    function setrem() {
+        var windowwidth = window.innerWidth;
+        var newpx = (windowwidth / 750) * 100;
+        $('html').css('fontSize', newpx);
+    }
+    setrem();
+    window.onresize = function () {
+        setrem();
+    };
+    // $(".pont ul li").click(function () {
+    //     $(".pont ul li").css({
+    //         backgroundColor:"rgb(254,195,35)",
+    //
+    //     })
+    // })
+    $(".lot").click(function () {
+        $(".bnm").css({
+            display:"block"
+        })
+    })
+    $(".bnm").click(function () {
+        $(".bnm").css({
+            display:"none"
+        })
+    })
+    $(".lost").click(function () {
+        $(".bnm1").css({
+            display:"block"
+        })
+    })
+    $(".bnm1").click(function () {
+        $(".bnm1").css({
+            display:"none"
+        })
+    })
+    $(".rop").click(function () {
+        $(".bnm2").css({
+            display:"block"
+        })
+    })
+    $(".bnm2").click(function () {
+        $(".bnm2").css({
+            display:"none"
+        })
+    })
+    $(".bt").click(function () {
+        $(".bnm3").css({
+            display:"block"
+        })
+    })
+    $(".bnm3").click(function () {
+        $(".bnm3").css({
+            display:"none"
+        })
+    });
+    // new Vue({
+    //     el:".chongzhi",
+    //     data:{
+    //         gt:"0"
+    //
+    //     }
+    // })
+</script>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>城市</title>
+    <link rel="stylesheet" href="../css/chengshi.css">
+</head>
+<body>
+<div class="chengshi">
+    <div class="header">
+        <a href="../html/index.html"><img src="../imgs/jiantou.png" alt=""></a>
+        <p>城市</p>
+    </div>
+    <div class="dingwei">
+        <p>当前定位城市：{{msg}}</p>
+        <a href="../html/daohang.html"><img src="../imgs/q3.png" alt=""></a>
+    </div>
+    <div class="wc">热门城市</div>
+    <div class="difang">
+        <div class="ul1">
+            <ul>
+                <li v-on:click="fn" v-moel="wf">北京</li>
+                <li  v-on:click="fn">天津</li>
+                <li>上海</li>
+                <li>海南</li>
+            </ul>
+        </div>
+        <div class="ul1">
+            <ul>
+                <li>深圳</li>
+                <li>广州</li>
+                <li>成都</li>
+                <li>重庆</li>
+            </ul>
+        </div>
+        <div class="ul1">
+            <ul>
+                <li>郑州</li>
+                <li>厦门</li>
+                <li>西安</li>
+                <li>昆明</li>
+            </ul>
+        </div>
+        <div class="ul1">
+            <ul>
+                <li>南京</li>
+                <li>杭州</li>
+                <li>长沙</li>
+                <li>武汉</li>
+            </ul>
+        </div>
+    </div>
+    <div class="btuo">
+        <h3>A</h3>
+        <div class="mingcheng">
+            <p>阿尔山</p>
+            <div>
+            </div>
+        </div>
+        <div class="mingcheng">
+            <p>阿尔苏</p>
+            <div></div>
+        </div>
+        <div class="mingcheng">
+            <p>阿勒泰</p>
+            <div></div>
+        </div>
+        <div class="mingcheng">
+            <p>安康</p>
+            <div></div>
+        </div>
+        <div class="mingcheng">
+            <p>安庆</p>
+            <div></div>
+        </div>
+        <div class="mingcheng">
+            <p>鞍山</p>
+            <div></div>
+        </div>
+        <div class="mingcheng">
+            <p>安顺</p>
+            <div></div>
+        </div>
+        <div class="mingcheng">
+            <p>安阳</p>
+            <div></div>
+        </div>
+
+
+    </div>
+    <div class="btuo">
+        <h3>B</h3>
+        <div class="mingcheng">
+            <p>白城</p>
+            <div></div>
+        </div>
+        <div class="mingcheng">
+            <p>百色</p>
+            <div></div>
+        </div>
+        <div class="mingcheng">
+            <p>保定</p>
+            <div></div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+</div>
+</body>
+<script src="../js/zepto.min.js"></script>
+<script src="../js/swiper.js"></script>
+<script src="../js/vue.js"></script>
+<script>
+    function setrem() {
+        var windowwidth = window.innerWidth;
+        var newpx = (windowwidth / 750) * 100;
+        $('html').css('fontSize', newpx);
+    }
+    setrem();
+    window.onresize = function () {
+        setrem();
+    };
+
+    new Vue({
+         el:".chengshi" ,
+        data:{
+              msg:"北京",
+             gh:"天津"
+        },
+        methods:{
+             fn(){
+                 this.msg=!this.msg;
+                 return true
+
+             },
+            wf(){
+                this.gh=!this.gh;
+                return true
+            }
+
+        }
+    })
+</script>
+</html>

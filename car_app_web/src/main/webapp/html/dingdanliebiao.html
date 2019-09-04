@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/dingdanliebiao.css">
+</head>
+<body>
+<div class="dingdanliebiao">
+        <div class="header">
+            <a href="../html/index.html"> <img id="gt" class="yut" src="../imgs/qq.png" alt=""></a>
+            <p>订单列表</p>
+            <img src="../imgs/11f.png" alt="">
+        </div>
+        <div class="nav">
+            <p>全部</p>
+            <p>代付款</p>
+            <p>待/已评价</p>
+
+        </div>
+        <div class="tuo">
+            <span></span>
+
+        </div>
+    <div class="fanhkuai shanchu">
+         <div class="jiaoyi">
+            <div class="imgt">
+                <img src="../imgs/h.png" alt="">
+                 <h1>未来路中博店</h1>
+            </div>
+              <p>交易成功</p>
+         </div>
+        <div class="lanbo">
+             <div class="tupian">
+                 <img src="../imgs/f.png" alt="">
+             </div>
+            <div class="qiche">
+                <h3>兰博基尼 Gallardo</h3>
+                <p>5.2L自动&nbsp; &nbsp; &nbsp;一厢2座</p>
+                <p>租用时长：2日</p>
+                <p>合计金额：<span>￥7590.00</span></p>
+            </div>
+        </div>
+        <div class="btn">
+            <button class="dj">删除订单</button>
+            <button><a href="../html/pingjia.html">来个评价</a></button>
+        </div>
+    </div>
+    <div class="fanhkuai shanchu1">
+        <div class="jiaoyi">
+            <div class="imgt">
+                <img src="../imgs/h.png" alt="">
+                <h1>郑大科技园店</h1>
+            </div>
+            <p>代付款</p>
+        </div>
+        <div class="lanbo">
+            <div class="tupian">
+                <img src="../imgs/g.png" alt="">
+            </div>
+            <div class="qiche">
+                <h3>凯迪拉克 XTS</h3>
+                <p>2.0T自动&nbsp; &nbsp; &nbsp;三厢5座</p>
+                <p>租用时长：2日</p>
+                <p>合计金额：<span>￥2220.88</span></p>
+            </div>
+        </div>
+        <div class="btn">
+            <button class="dj1">删除订单</button>
+
+        </div>
+    </div>
+    <div class="fanhkuai shanchu2">
+        <div class="jiaoyi">
+            <div class="imgt">
+                <img src="../imgs/h.png" alt="">
+                <h1>航海路银都店</h1>
+            </div>
+            <p>已评价</p>
+        </div>
+        <div class="lanbo">
+            <div class="tupian">
+                <img src="../imgs/d.png" alt="">
+            </div>
+            <div class="qiche">
+                <h3>奥迪R8</h3>
+                <p>3.6L自动&nbsp;&nbsp; &nbsp;两厢4座</p>
+                <p>租用时长：2日</p>
+                <p>合计金额：<span>￥4520.66</span></p>
+            </div>
+        </div>
+        <div class="btn">
+            <button class="dj2">删除订单</button>
+
+        </div>
+
+    </div>
+       <div class="gengduo">———— 暂无更多喽 ————</div>
+</div>
+
+</body>
+<script src="../js/zepto.min.js"></script>
+<script>
+    function setrem() {
+        var windowwidth = window.innerWidth;
+        var newpx = (windowwidth / 750) * 100;
+        $('html').css('fontSize', newpx);
+    }
+    setrem();
+    window.onresize = function () {
+        setrem();
+    };
+$(".btn .dj").click(function () {
+    $(".shanchu").css({
+        display:"none"
+    })
+})
+    $(".btn .dj1").click(function () {
+        $(".shanchu1").css({
+            display:"none"
+        })
+    })
+    $(".btn .dj2").click(function () {
+        $(".shanchu2").css({
+            display:"none"
+        })
+    })
+</script>
+</html>

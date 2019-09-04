@@ -1,0 +1,19 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+html{
+    font-size: 100px;
+}
+html,body {
+    width: 100%;
+    height: 100%;
+
+}
+.chexing{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+
+}

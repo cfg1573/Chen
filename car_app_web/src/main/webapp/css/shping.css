@@ -1,0 +1,392 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+html {
+    font-size: 100px;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #120220;
+
+}
+
+.shping {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.shping .header {
+    justify-content: space-between;
+    position: fixed;
+    background-color: #120220;
+    /* line-height: 0.88rem; */
+    z-index: 9;
+    width: 100%;
+    align-items: center;
+    padding-bottom: 0.2rem;
+    padding-top: 0.35rem;
+}
+
+.shping .header>a {
+    line-height: 0.88rem;
+    margin-left: .3rem;
+    outline: none;
+    float: left;
+    margin-left: 0.3rem;
+    margin-top: 0.19rem;
+}
+
+.shping .header>a>img {
+    width: 0.4rem;
+    height: 0.43rem;
+    outline: none;
+    float: left;
+}
+
+.shping .header>p:nth-child(2){
+    font-size: .3rem;
+    color: #ffffff;
+    height: 0.5rem;
+    float: left;
+    background-color: red;
+    width: 1.2rem;
+    text-align: center;
+    line-height: 0.5rem;
+    border-radius: 0.3rem;
+    margin-left: 2rem;
+    margin-top: 0.19rem;
+}
+
+.shping .header>p:nth-child(3) {
+    height: 0.5rem;
+    float: left;
+    font-size: .3rem;
+    color: #ffffff;
+    /* margin-right: 2.01rem; */
+    line-height: 0.5rem;
+    border-radius: 0.3rem;
+    margin-left: 1.62rem;
+    margin-top: 0.19rem;
+
+}
+
+
+
+
+
+.shping .new {
+    margin-top: -0.15rem;
+    display: flex;
+    z-index: 99;
+}
+
+.shping .new>.new_left {
+    position: fixed;
+    top: 1.25rem;
+}
+.shping .new>.new_right{
+    margin-top:1.3rem;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.shping .new>.new_right>biannei{
+    position: absolute;
+    top:0;
+    right:0;
+    overflow: auto;
+}
+
+
+
+
+
+
+
+
+.shping .new .new-text {
+    width: 2rem;
+}
+
+.shping .new .biannei {
+    width: 5.51rem;
+    height: 13.34rem;
+    background-color: #FEC323;
+    display: none;
+    position: absolute;
+    right: 0;
+    overflow: auto;
+
+}
+.shping .new .biannei:nth-child(1){
+    display:block;
+}
+
+.shping .new .biannei .qiche {
+    display: flex;
+    align-items: center;
+    margin-top: 0.8rem;
+    margin-left: 0.27rem;
+}
+
+.shping .new .biannei .qiche:nth-of-type(1) {
+    margin-top: 0.34rem;
+}
+
+.shping .new .biannei .qiche img {
+    width: 1.9rem;
+    height: 0.9rem;
+}
+
+.shping .new .biannei .qiche .ziti {
+    margin-left: 0.1rem;
+}
+
+.shping .new .biannei .qiche .ziti .p1 {
+    font-size: 0.3rem;
+    color: black;
+}
+
+.shping .new .biannei .qiche .ziti .p2 {
+    font-size: 0.26rem;
+    color: rgb(51, 51, 51);
+    margin-top: 0.15rem;
+}
+
+.shping .new .biannei .qiche .ziti .p3 {
+    font-size: 0.26rem;
+    margin-top: 0.08rem;
+}
+
+.shping .new .biannei .qiche .ziti .p3 span {
+    font-size: 0.46rem;
+    color: red;
+    font-weight: 600;
+}
+
+.shping .new .new-text .ust li {
+    font-size: 0.3rem;
+    color: white;
+    line-height: 1rem;
+    text-align: center;
+    height: 0.96rem;
+}
+.shping .new .new-text .ust li:nth-child(1) {
+background-color:  rgb(254, 195, 35);
+color: black;
+}
+/*.shping .new .new-text .ust li:hover{*/
+/*background-color: #FEC323;*/
+/*color: black;*/
+/*}*/
+/*.shping .new .new-text .ust li:hover,.biannei{*/
+/*display: block;*/
+/*}*/
+
+/*.shping .new .new-text .ust li:hover{*/
+/*background-color: #FEC323;*/
+/*}*/
+.shping .qukai {
+    width: 100%;
+    height: 100%;
+    background-color: #FEC323;
+    margin-top: -0.5rem;
+    border-radius: 0.5rem 0.5rem 0 0;
+    overflow: hidden;
+    display: none;
+    position: absolute;
+    top: 2rem;
+
+
+}
+
+.shping .qukai .title {
+    display: flex;
+    justify-content: center;
+
+}
+
+.shping .qukai .title h5 {
+    font-size: 0.3rem;
+    text-align: center;
+    margin-top: 0.31rem;
+}
+
+.shping .qukai .title .imgs {
+    margin-left: 1.5rem;
+    display: flex;
+}
+
+.shping .qukai .title img {
+    width: 0.44rem;
+    height: 0.44rem;
+    position: absolute;
+    right: 0.31rem;
+    margin-top: 0.31rem;
+}
+
+.shping .qukai .swiper-container {
+    margin-left: 0.26rem;
+    margin-top: 0.75rem;
+}
+
+.shping .qukai .swiper-container .swiper-wrapper .swiper-slide img {
+    width: 6.1rem;
+    height: 3.4rem;
+}
+
+.shping .qukai .swiper-container .swiper-pagination {
+    position: absolute;
+    top: 2.6rem;
+    left: -0.2rem;
+}
+
+.shping .qukai .swiper-container .swiper-pagination .swiper-pagination-bullet {
+    width: 0.12rem;
+    height: 0.12rem;
+    /*backgroun:white;*/
+    background: #FEE6E3;
+    opacity: 0.8;
+    margin-left: 0.07rem;
+}
+
+.shping .qukai .swiper-container .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: rgb(255, 255, 255);
+    width: 0.12rem;
+    height: 0.12rem;
+    /*background:white;*/
+    opacity: 1;
+    margin-left: 0.07rem;
+}
+
+.shping .qukai .imgk {
+    padding: 0 1.68rem;
+}
+
+.shping .qukai .imgk img {
+    width: 4.17rem;
+    height: 0.64rem;
+}
+
+.shping .qukai .luhu {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.34rem;
+}
+
+.shping .qukai .luhu .luhu1 h5 {
+    font-size: 0.34rem;
+}
+
+.shping .qukai .luhu .luhu1 p {
+    font-size: 0.28rem;
+    margin-top: 0.15rem;
+}
+
+.shping .qukai .luhu button {
+    width: 1.6rem;
+    height: 0.5rem;
+    border-radius: 0.25rem;
+    color: white;
+    background-color: black;
+    border: none;
+    outline: none;
+}
+
+.shping .qukai .zhengzhou {
+    margin-left: 0.34rem;
+    margin-top: 0.5rem;
+}
+
+.shping .qukai .zhengzhou .tbn {
+    display: flex;
+    align-items: center;
+}
+
+.shping .qukai .zhengzhou .tbn img {
+    width: 0.6rem;
+    height: 0.6rem;
+}
+
+.shping .qukai .zhengzhou .tbn p {
+    font-size: 0.32rem;
+    font-weight: 600;
+    margin-left: 0.13rem;
+}
+
+.shping .qukai .zhengzhou .pk {
+    margin-top: 0.1rem;
+}
+
+.shping .qukai .zhengzhou .pk p {
+    font-size: 0.28rem;
+}
+
+.shping .qukai .ktv {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.34rem;
+    align-items: center;
+}
+
+.shping .qukai .ktv p {
+    font-size: 0.28rem;
+}
+
+.shping .qukai .ktv p:nth-of-type(2) {
+    font-size: 0.26rem;
+    color: red;
+}
+
+.shping .qukai .ktv p span {
+    font-size: 0.42rem;
+    color: red;
+}
+
+.shping .qukai .zt {
+    display: flex;
+    align-items: center;
+    margin-left: 0.34rem;
+    margin-top: 0.1rem;
+}
+
+.shping .qukai .zt img {
+    width: 0.44rem;
+    height: 0.44rem;
+}
+
+.shping .qukai .zt p {
+    font-size: 0.28rem;
+}
+
+.shping .qukai .zt p span {
+    color: red;
+}
+
+.shping .qukai .zt h5 {
+    font-size: 0.28rem;
+    color: red;
+    margin-left: 0.66rem;
+}
+
+.shping .qukai .btn {
+    padding: 0.3rem 0.94rem;
+}
+
+.shping .qukai .btn button {
+    width: 5.6rem;
+    height: 0.8rem;
+    border-radius: 0.4rem;
+    border: none;
+    background-color: white;
+    font-size: 0.3rem;
+    color: red;
+    outline: none;
+}

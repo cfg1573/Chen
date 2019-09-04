@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/dingdanzhifu.css">
+</head>
+<body>
+<div class="dingdanzhifu">
+    <div class="header">
+        <img src="../imgs/jiantou.png" alt="">
+        <p>订单信息</p>
+    </div>
+    <div class="car">
+        <h5>车辆信息</h5>
+        <div class="cars">
+            <img src="../imgs/qqqq%20(2).png" alt="">
+            <div class="py">
+                <h5>奥迪 A6</h5>
+                <p>1.8T自动   三厢5座</p>
+            </div>
+        </div>
+    </div>
+    <div class="text">
+        <div>
+            <p>取车城市：<span>郑州</span></p>
+            <p>取车门店：<span>金水路店</span></p>
+            <p>取车时间：<span>2019-9-1</span></p>
+        </div>
+        <div>
+            <p>还车城市：<span>洛阳</span></p>
+            <p>还车门店：<span>新区店</span></p>
+            <p>还车时间：<span>3天</span></p>
+        </div>
+    </div>
+    <div class="dingjin"><p>定金：<a href="">￥</a><span>8888</span></p></div>
+<div class="gop">
+<h5>支付方式</h5>
+    <div class="yinlian">
+        <div class="imgst">
+            <img src="../imgs/QQ图片20190825175553.png" alt="">
+            <p>账户余额</p>
+        </div>
+        <div class="df">
+            <img class="lot" v-on:click="fn"  src="../imgs/选择@2x.png" alt="">
+           <img class="bnm" v-show="gb"  src="../imgs/选中@2x.png" alt="">
+        </div>
+    </div>
+    <div class="yinlian">
+        <div class="imgst">
+            <img src="../imgs/微信@2x.png" alt="">
+            <p>微信</p>
+        </div>
+        <div class="df">
+            <img  class="lost"v-on:click="zn" src="../imgs/选择@2x.png" alt="">
+            <img class="bnm1"  v-show="gt" src="../imgs/选中@2x.png" alt="">
+        </div>
+    </div>
+    <div class="yinlian">
+        <div class="imgst">
+            <img src="../imgs/支付宝@2x.png" alt="">
+            <p>支付宝</p>
+        </div>
+        <div class="df">
+            <img class="rop" src="../imgs/选择@2x.png" alt="">
+            <img class="bnm2"  v-show="gt" src="../imgs/选中@2x.png" alt="">
+        </div>
+    </div>
+    <div class="tongyi">
+        <img class="bt" src="../imgs/同意1@2x.png" alt="">
+        <p> 同意 <span>平驾分时租车租赁协议</span></p>
+    </div>
+    <img class="bnm3" src="../imgs/同意2@2x.png" alt="">
+    <button>提交/支付</button>
+</div>
+</div>
+</body>
+<script src="../js/zepto.min.js"></script>
+<script src="../js/swiper.js"></script>
+<script src="../js/vue.js"></script>
+<script>
+    function setrem() {
+        var windowwidth = window.innerWidth;
+        var newpx = (windowwidth / 750) * 100;
+        $('html').css('fontSize', newpx);
+    }
+    setrem();
+    window.onresize = function () {
+        setrem();
+    };
+
+    $(".lot").click(function () {
+       $(".bnm").css({
+           display:"block"
+       })
+    })
+    $(".bnm").click(function () {
+        $(".bnm").css({
+            display:"none"
+        })
+    })
+    $(".lost").click(function () {
+        $(".bnm1").css({
+            display:"block"
+        })
+    })
+    $(".bnm1").click(function () {
+        $(".bnm1").css({
+            display:"none"
+        })
+    })
+    $(".rop").click(function () {
+        $(".bnm2").css({
+            display:"block"
+        })
+    })
+    $(".bnm2").click(function () {
+        $(".bnm2").css({
+            display:"none"
+        })
+    })
+    $(".bt").click(function () {
+        $(".bnm3").css({
+            display:"block"
+        })
+    })
+    $(".bnm3").click(function () {
+        $(".bnm3").css({
+            display:"none"
+        })
+    })
+    // new Vue({
+    //     el:".df",
+    //     data:{
+    //           gb:false,
+    //           gt:false
+    //     },
+    //      methods:{
+    //         fn(){
+    //             this.gb=!this.gb
+    //         },
+    //          zn(){
+    //              this.gt=!this.gt
+    //          }
+    //      }
+    //
+    // })
+</script>
+</html>

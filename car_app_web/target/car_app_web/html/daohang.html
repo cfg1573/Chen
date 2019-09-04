@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="../css/daohang.css">
+
+<body>
+
+<div class="daohang">
+    <div class="fenx">
+        <div class="header">
+            <img id="gt" class="yut" src="../imgs/icon-01@2x.png" alt="">
+            <p>平驾租车</p>
+            <a href="../html/pingjia.html"><img src="../imgs/icon-02@2x.png" alt=""></a>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="../html/index.html">国内自驾</a></li>
+                <li><a href="../html/daohang.html">地图导航</a></li>
+                <li><a href="mendian.jsp">门店</a></li>
+                <li><a href="../html/shping.html">筛选</a></li>
+            </ul>
+
+        </div>
+    </div>
+    <div id="container">
+
+    </div>
+    <div class="sech">
+        <div class="sech_top">
+            <img src="../imgs/daohang/icon-03@2x.png" alt="">
+            <input type="text">
+        </div>
+        <ul class="pic">
+            <li>
+                <img src="../imgs/daohang/icon-04@2x.png" alt="">
+                <p>附近还车点</p>
+            </li>
+            <li>
+                <img src="../imgs/daohang/icon-05@2x.png" alt="">
+                <p>附近门店</p>
+            </li>
+            <li>
+                <img src="../imgs/daohang/icon-06@2x.png" alt="">
+                <p>预定</p>
+            </li>
+        </ul>
+        <div class="footer">
+            <p><img src="../imgs/daohang/icon-07@2x.png" alt="">添加地点</p>
+            <p><img src="../imgs/daohang/icon-08@2x.png" alt="">添加地点</p>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+<script src="../js/zepto.min.js"></script>
+<!--<script src="../js/fontsize.js"></script>-->
+<script src="../js/touch.js"></script>
+<script src="../js/touch.js"></script>
+<script type="text/javascript"
+    src="https://webapi.amap.com/maps?v=1.4.15&key=3c6f92a5584f7875cd81d9f5979c28b4"></script>
+<script>
+    var map = new AMap.Map('container', {
+        resizeEnable: true,
+        zoom: 13
+    });
+    //实时路况图层
+    var trafficLayer = new AMap.TileLayer.Traffic({
+        zIndex: 10
+    });
+    map.add(trafficLayer);//添加图层到地图
+    var marker = new AMap.Marker({
+    })
+    map.add(marker);//添加到地图
+    function setrem() {
+        var windowwidth = window.innerWidth;
+        var newpx = (windowwidth / 750) * 100;
+        $('html').css('fontSize', newpx);
+    }
+    setrem();
+    window.onresize = function () {
+        setrem();
+    };
+    $(".nav ul li").eq(0).click(function () {
+        $(".nav ul li").eq(1).css({
+            backgroundColor:"black"
+        })
+        $(".nav ul li").eq(0).css({
+            backgroundColor:"rgb(209,51,57)",
+            borderRadius:"0.26rem"
+        })
+        $(".nav ul li").eq(2).css({
+            backgroundColor:"black"
+        })
+        $(".nav ul li").eq(3).css({
+            backgroundColor:"black"
+        })
+    })
+    $(".nav ul li").eq(1).click(function () {
+        $(".nav ul li").eq(1).css({
+            backgroundColor:"rgb(209,51,57)",
+            borderRadius:"0.26rem"
+        })
+        $(".nav ul li ").eq(0).css({
+            backgroundColor:"black"
+
+        })
+        $(".nav ul li ").eq(2).css({
+            backgroundColor:"black"
+
+        })
+        $(".nav ul li ").eq(3).css({
+            backgroundColor:"black"
+
+        })
+    })
+    $(".nav ul li").eq(2).click(function () {
+        $(".nav ul li").eq(2).css({
+            backgroundColor:"rgb(209,51,57)",
+            borderRadius:"0.26rem"
+        })
+        $(".nav ul li ").eq(1).css({
+            backgroundColor:"black"
+
+        })
+        $(".nav ul li ").eq(3).css({
+            backgroundColor:"black"
+
+        })
+        $(".nav ul li ").eq(0).css({
+            backgroundColor:"black"
+
+        })
+
+    })
+    $(".nav ul li").eq(3).click(function () {
+        $(".nav ul li").eq(3).css({
+            backgroundColor:"rgb(209,51,57)",
+            borderRadius:"0.26rem"
+        })
+        $(".nav ul li ").eq(2).css({
+            backgroundColor:"black"
+
+        })
+        $(".nav ul li ").eq(1).css({
+            backgroundColor:"black"
+
+        })
+        $(".nav ul li ").eq(0).css({
+            backgroundColor:"black"
+
+        })
+    })
+
+</script>
+
+</html>
